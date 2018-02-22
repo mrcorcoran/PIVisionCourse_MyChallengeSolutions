@@ -1,0 +1,7 @@
+<div style="background-color: rgb(135, 250, 150); border-radius: 10px">
+    <h2> {{Label}} {{Units}}</h2>
+    <h3> Total Number of Items:  {{Values.length}} </h3>
+    <div ng-repeat='item in Values' ng-show="item.Value > 70">
+        {{item.Time}}, {{item.Value | number: 2}}
+    </div>
+</div>

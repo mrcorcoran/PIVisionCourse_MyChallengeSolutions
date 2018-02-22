@@ -1,0 +1,8 @@
+<link rel="stylesheet" type="text/css" href="Scripts/app/editor/symbols/ext/sym-timeseries-style.css">
+<div class="timeseries-parent">
+    <h2> {{Label}} {{Units}}</h2>
+    <h3> Total Number of Items:  {{Values.length}} </h3>
+    <div ng-repeat='item in Values' ng-show="item.Value > 70">
+        {{item.Time}}, &nbsp {{item.Value | number: 2}}
+    </div>
+</div>
